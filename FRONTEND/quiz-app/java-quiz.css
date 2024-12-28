@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #230543, #2575fc); /* Gradient background */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    background-color: rgb(21, 108, 163);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.question-number {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.question {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: rgb(240, 249, 112)
+}
+
+.next-button {
+    background-color: #ff4757; /* Red color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #1d0ca1; /* Lighter red on hover */
+}

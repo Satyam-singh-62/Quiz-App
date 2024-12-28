@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css"> 
+</head>
+<body>
+    <div class="bgimage">
+        <div class="login">
+            <h2 id="them">Login</h2>
+            <form action="/questions" method="post" th:object="${loginRequest}">
+                <label for="username">Username:</label>
+                <input type="text" id="username" th:field="*{username}" required><br>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" th:field="*{password}" required><br>
+            
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="LOGIN.JS">
+    </script>
+</body>
+</html>

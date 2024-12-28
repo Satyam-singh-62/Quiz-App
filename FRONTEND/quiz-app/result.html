@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Quiz Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .result-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Your Quiz Result</h1>
+        <div class="score" id="score"></div>
+        <p id="feedback"></p>
+        <button class="button" onclick="window.location.href='index.html'">Go Back</button>
+    </div>
+
+    <script>
+        // Function to get the result from localStorage or URL parameters
+        function displayResult() {
+            const score = localStorage.getItem('quizScore'); // Get score from localStorage
+            const totalQuestions = localStorage.getItem('totalQuestions'); // Get total questions
+            const feedback = document.getElementById('feedback');
+
+            if (score !== null) {
+                document.getElementById('score').innerText = `You scored ${score} out of ${totalQuestions}`;
+                
+                // Optional: Provide feedback based on score
+                const percentage = (score / totalQuestions) * 100;
+                if (percentage >= 80) {
+                    feedback.innerText = 'Excellent work! Keep it up!';
+                } else if (percentage >= 50) {
+                    feedback.innerText = 'Good job! You can do even better!';
+                } else {
+                    feedback.innerText = 'Don,t give up! Try again!';
+                }
+            } else {
+                document.getElementById('score').innerText = 'No score available.';
+            }
+        }
+
+        // Call the displayResult function when the page loads
+        window.onload = displayResult;
+    </script>
+</body>
+</html>

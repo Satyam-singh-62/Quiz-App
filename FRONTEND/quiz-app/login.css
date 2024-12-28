@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.bgimage {
+    height: 98vh;
+    width: 100%;
+    background-image: url(image/image\ 22.avif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login page */
+.login {
+    height: 50vh;
+    width: 50vh;
+    box-shadow: 0 0 10px rgba(230, 214, 214, 0.1);
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(31, 31, 46);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#them {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.userName {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -------------------------------------- */
+.userName label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.userName input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: black;
+}
+
+.password {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----------------------------------- */
+.password label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.password input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: black;
+}
+#create{
+    margin-bottom: 10px;
+}
+/* ------------------------------------------ */
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+ button {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 30px;
+}
+
+ button:hover {
+    background-color: #0056b3;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline solid white;
+    color: rgb(169, 239, 169);
+}
+/* ------------------------------ */
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login {
+        width: 80%;
+        height: auto;
+    }
+
+    .userName {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .login {
+        width: 90%;
+        height: auto;
+    }
+
+    .userName input {
+        width: 90%;
+    }
+
+    .userName button {
+        width: 70%;
+    }
+}

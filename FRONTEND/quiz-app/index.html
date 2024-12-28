@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!--Landing Page-->
+    <section class="landing-page">
+
+        <div class="wrapper">
+            <div class="flex-content">
+                <h1 class="vacation-heading">Welcome To Master Quiz app</h1>
+                <a href="#quiz-packages" class="btn">Start Now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--header section-->
+    <header class="quiz-header" id="quiz-header">
+        <h1 class="heading">Master Quiz</h1>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#quiz-packages">Quiz</a>
+        <a href="#Performer">Top Performers</a>
+        <a href="#notes">Notes</a>
+    </nav>
+
+
+    <section class="quiz-packages-section" id="quiz-packages">
+        <h1 class="quiz-heading">Coding Quiz</h1>
+        <p class="quiz-text">Here you can get the Ultimate programing quiz in JAVA. You can challenge your coding knowledge and prove your Programming Prowess.</p>
+        <div class="package-wrapper">
+            <div class="package-card">
+                <img src="image/java.jpg" alt="">
+                <p class="card-heading">Java</p>
+                <p class="card-text">Here you can get the Ultimate programming quiz in JAVA. You can challenge your coding knowledge and prove your Programming Prowess.</p>
+                <p class="card-heading">500₹</p>
+                <button class="btn" onclick="startQuiz('java')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src="image/python.jpg" alt="">
+                <p class="card-heading">Python</p>
+                <p class="card-text">Here you can get the Ultimate programming quiz in PYTHON. You can challenge your coding knowledge and prove your Programming Prowess.</p>
+                <p class="card-heading">400₹</p>
+                <button class="btn" onclick="startQuiz('Python')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src="image/js.png" alt="">
+                <p class="card-heading">JavaScript</p>
+                <p class="card-text">Here you can get the Ultimate programming quiz in JavaScript. You can challenge your coding knowledge and prove your Programming Prowess.</p>
+                <p class="card-heading">300₹</p>
+                <button class="btn" onclick="startQuiz('js')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src="image/c.png" alt="">
+                <p class="card-heading">C</p>
+                <p class="card-text">Here you can get the Ultimate programming quiz in C. You can challenge your coding knowledge and prove your Programming Prowess. Prove your expertise.</p>
+                <p class="card-heading">200₹</p>
+                <button class="btn" onclick="startQuiz('C')">Take Quiz</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="Performer-quiz-section" id="Performer">
+        <h1 class="quiz-heading">Top Performer</h1>
+        <p class="quiz-text">Our top performers are the brightest minds who have consistently excelled in our quizzes, showcasing their expertise and dedication. They represent the pinnacle of knowledge across various subjects like Java, Python, and more. With impressive scores, they set the benchmark for others to follow and inspire the entire community to strive for excellence.</p>
+        <div class="image-card">
+            <img src="image/m1.jpg" alt="">
+            <img src="image/m2.jpg" alt="">
+            <img src="image/m5.jpg" alt="">
+            <img src="image/m4.jpg" alt="">
+            <img src="image/m3.jpg" alt="">
+            <img src="image/m6.jpg" alt="">
+        </div>
+        
+    </section>
+
+
+    <section class="notes-section" id="notes">
+        <h1 class="quiz-heading">Subject Notes</h1>
+        <p class="quiz-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis commodi maiores reiciendis tempore consequatur, ut quo, in error officiis maxime dicta alias soluta, amet aliquam laboriosam magnam eius consectetur provident reprehenderit sapiente. Omnis animi, distinctio nihil quidem eius ipsum reprehenderit corrupti ducimus quod repellendus minus cumque, totam fuga aut optio.</p>
+        <div class="notes-div">
+            <div class="notes-wrapper">
+                <a href="notes/java-notes.pdf" target="_blank">
+                    <img src="image/java.png" alt="">
+                </a>
+            </div>
+            <div class="notes-wrapper">
+                <a href="notes/js-notes.pdf" target="_blank">
+                    <img src="image/js.png" alt="">
+                </a>
+            </div>
+            <div class="notes-wrapper">
+                <a href="notes/c-notes.pdf" target="_blank">
+                    <img src="image/c.png" alt="">
+                </a>
+            </div>
+            <div class="notes-wrapper">
+                <a href="notes/python-notes.pdf" target="_blank">
+                    <img src="image/python.jpg" alt="">
+                </a>
+            </div>
+            <div class="notes-wrapper">
+                <a href="notes/DSA-notes.pdf" target="_blank">
+                    <img src="image/DSA.png" alt="">
+                </a>
+            </div>
+            <div class="notes-wrapper">
+                <img src="image/spring.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <small>All Rights Reserved</small>
+        <small>Developed & Maintained By
+            <a href="https://www.instagram.com/s.a.t.y.a.m._.s.i.n.g.h?igsh=dnp2amN4MnNpbzMy" target="_blank">SATYAM KUMAR SINGH</a>
+        </small>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="notes.js"></script>
+    
+</body>
+</html>

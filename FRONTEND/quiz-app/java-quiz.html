@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Quiz</title>
+    <link rel="stylesheet" href="java-quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Java Quiz</h1>
+        <div class="quiz-info">
+            <div class="timer">Time: <span id="timer">16</span></div>
+            <div class="question-number">Question <span id="current-question">1</span> of <span id="total-questions">5</span></div>
+        </div>
+        <div class="question" id="question-text">Loading question...</div>
+        <div class="options" id="options-container"></div>
+        <button id="next-button" class="next-button" onclick="nextQuestion()">Next</button>
+    </div>
+    <script src="java-quiz.js"></script>
+</body>
+</html>
